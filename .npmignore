@@ -1,0 +1,13 @@
+__tests__
+.circleci
+.vscode
+coverage
+docs
+src
+.editorconfig
+.gitignore
+.npmignore
+jest.config.js
+renovate.json
+tsconfig.json
+tslint.json

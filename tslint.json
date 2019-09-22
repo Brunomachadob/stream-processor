@@ -1,0 +1,101 @@
+{
+    "extends": "tslint:latest",
+    "rulesDirectory": ["node_modules/tslint-eslint-rules/dist/rules"],
+    "rules": {
+        "typedef": [
+            true,
+            "parameter",
+            "call-signature",
+            "arrow-parameter",
+            "property-declaration",
+            "variable-declaration",
+            "member-variable-declaration"
+        ],
+        "interface-over-type-literal": false,
+        "object-literal-key-quotes": [true, "as-needed"],
+        "max-file-line-count": [true, 150],
+        "eofline": true,
+        "newline-before-return": true,
+        "no-constant-condition": true,
+        "no-control-regex": true,
+        "no-duplicate-case": true,
+        "no-empty-character-class": true,
+        "no-ex-assign": true,
+        "no-extra-boolean-cast": true,
+        "no-extra-semi": true,
+        "no-inner-declarations": [
+            true,
+            "both"
+        ],
+        "no-invalid-regexp": true,
+        "object-literal-sort-keys": false,
+        "ordered-imports": [false],
+        "ter-no-irregular-whitespace": true,
+        "no-regex-spaces": true,
+        "ter-no-sparse-arrays": true,
+        "no-unexpected-multiline": true,
+        "use-isnan": true,
+        "valid-typeof": true,
+        "no-multi-spaces": [
+            true,
+            {
+                "exceptions": { "PropertyAssignment": false, "OtherException": "true|false" }
+            }
+        ],
+        "handle-callback-err": [
+            true,
+            "^(err|error|anySpecificError)$"
+        ],
+        "array-bracket-spacing": [
+            true,
+            "always",
+            {
+                "objectsInArrays": false,
+                "arraysInArrays": false
+            }
+        ],
+        "object-curly-spacing": [
+            true,
+            "always"
+        ],
+        "block-spacing": [
+            true,
+            "always"
+        ],
+        "brace-style": [
+            true,
+            "1tbs"
+        ],
+        "valid-jsdoc": [
+            true,
+            {
+                "prefer": {
+                    "arg": "param",
+                    "argument": "param",
+                    "return": "returns"
+                },
+                "preferType": {
+                    "Boolean": "boolean",
+                    "Number": "number",
+                    "object": "Object",
+                    "String": "string"
+                },
+                "requireReturn": false,
+                "requireParamDescription": true,
+                "requireReturnDescription": true,
+                "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$"
+            }
+        ],
+        "prefer-conditional-expression": false,
+        "prefer-object-spread": false,
+        "no-shadowed-variable": true,
+        "ter-func-call-spacing": true,
+        "no-parameter-reassignment": true,
+        "no-submodule-imports": false,
+        "no-redundant-jsdoc": true,
+        "ban-comma-operator": true,
+        "no-dynamic-delete": true,
+        "prefer-readonly": true,
+        "ter-padded-blocks": [true, "never"]
+    }
+}

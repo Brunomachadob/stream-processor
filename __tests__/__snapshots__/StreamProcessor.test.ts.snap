@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StreamProcessor StreamProcessor.flatMap 1`] = `
+Array [
+  Object {
+    "itemId": 1,
+    "itemName": "Item1",
+  },
+  Object {
+    "itemId": 2,
+    "itemName": "Item2",
+  },
+  Object {
+    "itemId": 3,
+    "itemName": "Item3",
+  },
+  Object {
+    "itemId": 4,
+    "itemName": "Item4",
+  },
+  Object {
+    "itemId": 5,
+    "itemName": "Item5",
+  },
+  Object {
+    "itemId": 6,
+    "itemName": "Item6",
+  },
+  Object {
+    "itemId": 7,
+    "itemName": "Item7",
+  },
+  Object {
+    "itemId": 8,
+    "itemName": "Item8",
+  },
+]
+`;
+
+exports[`StreamProcessor StreamProcessor.groupBy 1`] = `
+Map {
+  "DE" => Array [
+    Object {
+      "age": 18,
+      "country": "DE",
+      "id": 1,
+      "items": Array [
+        Object {
+          "itemId": 1,
+          "itemName": "Item1",
+        },
+        Object {
+          "itemId": 2,
+          "itemName": "Item2",
+        },
+      ],
+      "name": "Test1",
+    },
+    Object {
+      "age": 20,
+      "country": "DE",
+      "id": 2,
+      "items": Array [
+        Object {
+          "itemId": 3,
+          "itemName": "Item3",
+        },
+        Object {
+          "itemId": 4,
+          "itemName": "Item4",
+        },
+      ],
+      "name": "Test2",
+    },
+  ],
+  "BR" => Array [
+    Object {
+      "age": 26,
+      "country": "BR",
+      "id": 3,
+      "items": Array [
+        Object {
+          "itemId": 5,
+          "itemName": "Item5",
+        },
+        Object {
+          "itemId": 6,
+          "itemName": "Item6",
+        },
+      ],
+      "name": "Test3",
+    },
+    Object {
+      "age": 23,
+      "country": "BR",
+      "id": 4,
+      "items": Array [
+        Object {
+          "itemId": 7,
+          "itemName": "Item7",
+        },
+        Object {
+          "itemId": 8,
+          "itemName": "Item8",
+        },
+      ],
+      "name": "Test4",
+    },
+  ],
+}
+`;
+
+exports[`StreamProcessor StreamProcessor.reduce with different types 1`] = `
+Array [
+  "Item1",
+  "Item2",
+  "Item3",
+  "Item4",
+  "Item5",
+  "Item6",
+  "Item7",
+  "Item8",
+]
+`;
